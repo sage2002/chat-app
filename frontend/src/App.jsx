@@ -1,5 +1,10 @@
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SignUpPage from "./pages/SignUpPage";
+import LoginPage from "./pages/LoginPage";
+import SettingsPage from "./pages/SettingsPage";
+import ProfilePage from "./pages/ProfilePage";
 
 const App = () => {
   return (
@@ -10,8 +15,8 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<SettingsPage />} />
-        <Route path="/" element={<ProfilePage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   );
